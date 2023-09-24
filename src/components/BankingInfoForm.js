@@ -50,6 +50,7 @@ export default function BankingForm() {
           <TextField
             required
             id="salary"
+            inputProps={{ "data-testid": "salary-input" }}
             name="salary"
             type="number"
             label="Base annual salary before tax (AUD)"
@@ -63,6 +64,7 @@ export default function BankingForm() {
           <TextField
             disabled="true"
             id="tax"
+            inputProps={{ "data-testid": "tax" }}
             name="tax"
             label="Your tax (AUD)"
             value={tax}
@@ -75,6 +77,7 @@ export default function BankingForm() {
           <TextField
             disabled="true"
             id="super"
+            inputProps={{ "data-testid": "super" }}
             name="super"
             label="Your superannuation (AUD)"
             value={superannuation}
