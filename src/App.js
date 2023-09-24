@@ -29,7 +29,7 @@ function Copyright() {
   );
 }
 
-const steps = ['Personal Information', 'Employment Information', 'Banking Information'];
+const steps = ['Personal Info', 'Employment Info', 'Banking Info'];
 
 function getStepContent(step) {
   switch (step) {
@@ -87,7 +87,7 @@ function App() {
           {activeStep === steps.length ? (
             <React.Fragment>
               <Typography variant="h5" gutterBottom>
-                Thank you for your order.
+                Onboarding form submitted.
               </Typography>
               <Typography variant="subtitle1">
                 Thank you for submitting your onboarding form!

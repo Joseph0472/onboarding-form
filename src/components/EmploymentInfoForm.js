@@ -12,7 +12,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 export default function EmploymentForm() {
-    const [status, setStatus] = React.useState('Employment Type');
+    const [status, setStatus] = React.useState('Employment type');
 
     const handleChange = (event) => {
         setStatus(event.target.value);
@@ -28,7 +28,7 @@ export default function EmploymentForm() {
             required
             id="employeeId"
             name="employeeId"
-            label="Employee Id"
+            label="Employee ID"
             fullWidth
             autoComplete="employeeId"
             variant="standard"
@@ -39,7 +39,7 @@ export default function EmploymentForm() {
             required
             id="jobTitle"
             name="jobTitle"
-            label="Job Title"
+            label="Job title"
             fullWidth
             autoComplete="jobTitle"
             variant="standard"
@@ -50,9 +50,9 @@ export default function EmploymentForm() {
             required
             id="department"
             name="department"
-            label="Department"
+            label="department"
             fullWidth
-            autoComplete="department"
+            autoComplete="Department"
             variant="standard"
           />
         </Grid>
@@ -64,14 +64,14 @@ export default function EmploymentForm() {
                 fullWidth
                 onChange={handleChange}
             >
-                <MenuItem value="Employment Type">Employment Type</MenuItem>
+                <MenuItem value="Employment type">Employment type</MenuItem>
                 <MenuItem value="Fix-term">Fix-term</MenuItem>
                 <MenuItem value="Permanent">Permanent</MenuItem>
             </Select>
         </Grid>
         <Grid item xs={12} sm={6}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DatePicker label="Employment Start Date"/>
+            <DatePicker label="Employment start date"/>
           </LocalizationProvider>
         </Grid>
       </Grid>
