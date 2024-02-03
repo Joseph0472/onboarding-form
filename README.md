@@ -1,4 +1,4 @@
-# Welcome to onboarding form app!
+# Welcome to the onboarding form app!
 
 This is an onboarding form app. Users can input their onboarding information in steps.
 ![alt text](image.png)
