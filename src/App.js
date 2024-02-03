@@ -15,13 +15,14 @@ import Typography from '@mui/material/Typography';
 import PersonalInfoForm  from './components/PersonalInfoForm';
 import EmploymentForm from './components/EmploymentInfoForm';
 import BankingForm from './components/BankingInfoForm';
+import { COMPANY_URL, COMPANY_NAME } from './constants/global'
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://www.cloudcase.net/">
-        Cloudcase
+      <Link color="inherit" href={COMPANY_URL}>
+        {COMPANY_NAME}
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -68,7 +69,7 @@ function App() {
       >
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Cloudcase
+            {COMPANY_NAME}
           </Typography>
         </Toolbar>
       </AppBar>
