@@ -1,6 +1,7 @@
 # Welcome to onboarding form app!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an onboarding form app. Users can input their onboarding information in steps.
+![alt text](image.png)
 
 ## Available Scripts
 
